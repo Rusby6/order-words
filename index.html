@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groucho Quotes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form class="login">
+      <div class="login-screen">
+        <div id="instructions">
+          Antes de empezar el juego, deberás introducir tu dirección de correo
+          electrónico e indicar el resultado de la suma de los valores para
+          confirmar que eres una persona.
+        </div>
+        <div class="control-group">
+          <input type="text" id="myname" placeholder="myname" required />
+        </div>
+        <div class="control-group">
+          <input
+            type="email"
+            id="myemail"
+            placeholder="myemail@server.com"
+            required
+          />
+        </div>
+        <div class="control-group">
+          <span id="adden1">45</span> + <span id="adden2">7</span> =
+          <input type="number" id="addition" style="width: 150px" required />
+        </div>
+        <input id="btnStart" type="submit" class="btn" value="Start" />
+        <br />
+        <div id="mensajeError">
+          Algun campo esta mal. Vuelve a intentarlo de nuevo.
+        </div>
+      </div>
+    </form>
+
+    <div id="game" style="display: none">
+      <div
+        class="game-screen"
+        id="disorder"
+        style="border: 3px dashed blue"
+      ></div>
+      <div class="game-screen" id="guess" style="border: 3px dashed red"></div>
+      <div>
+        <button class="btn" id="check" style="border: 2px solid white">
+          Comprobar <span id="message"></span>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
