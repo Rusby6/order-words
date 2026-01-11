@@ -66,7 +66,7 @@ order-words/
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tuusuario/order-words
+git clone https://github.com/tuusuario/order-words.git
 ```
 2. Accede al directorio del proyecto:
 
